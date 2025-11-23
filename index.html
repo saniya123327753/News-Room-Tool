@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Newsroom Collaboration Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">📰 AI Newsroom Collaboration Tool</h1>
+
+    <div class="container">
+
+        <!-- Add Article -->
+        <div class="card">
+            <h2>Add News Article</h2>
+            <textarea id="newsInput" placeholder="Write your article..."></textarea>
+            <button onclick="addNews()">Add Article</button>
+        </div>
+
+        <!-- AI Summary -->
+        <div class="card">
+            <h2>AI Summary</h2>
+            <textarea id="summaryText" placeholder="Paste text to summarize..."></textarea>
+            <button onclick="generateSummary()">Generate Summary</button>
+            <p id="summaryOutput"></p>
+        </div>
+
+        <!-- Team Messages -->
+        <div class="card">
+            <h2>Team Chat</h2>
+            <input id="teamMessage" placeholder="Write message...">
+            <button onclick="sendMessage()">Send</button>
+            <div id="messageList"></div>
+        </div>
+
+        <!-- Display Articles -->
+        <div class="card full">
+            <h2>Published Articles</h2>
+            <div id="newsList"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
